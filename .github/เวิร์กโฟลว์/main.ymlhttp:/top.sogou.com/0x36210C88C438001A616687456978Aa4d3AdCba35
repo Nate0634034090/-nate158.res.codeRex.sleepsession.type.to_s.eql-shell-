@@ -1,0 +1,110 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the main branch
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+
+      # Runs a single command using the runners shell
+      - name: Run a one-line script
+        run: echo Hello, world!
+
+      # Runs a set of commands using the runners shell
+      - name: Run a multi-line script
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project.
+    #-*- การเข้ารหัส:utf-8 -*-
+#จากตัวค้นหานำเข้า FIND
+นำเข้า urllib2
+จาก bs4 นำเข้า BeautifulSoup เป็น bs
+นำเข้าbs4
+จากเวลานำเข้าการนอนหลับ
+นำเข้าsys
+จาก pylsy นำเข้า pylsytable
+โหลดซ้ำ (sys)
+sys.setdefaultencoding('utf-8')
+ข้อมูล=[]
+t1 = []
+t2 = []
+t3 = []
+t4 = []
+t5 = []
+t6 = []
+t7 = []
+t8 = []
+t9 = []
+t10 = []
+c=0
+ret=urllib2.urlopen('http://top.sogou.com/')
+#พิมพ์ ret.read()
+ซุป=bs(ret.read(),'lxml')
+#พิมพ์ซุป.find_all('p',class_='p2')[1:]
+สำหรับฉันใน soup.select('span'):
+    ถ้า i.contents:
+        พิมพ์ i.get('class'),i.contents
+ถ้า i.get('class')[0]=='num' หรือ i.get('class')[0]=='hot-num':
+    ผ่าน
+#print i.contents[0]
+สำหรับฉันใน soup.select('a'):
+    ถ้า i.get('href').bs.find('query')>0 และประเภท (i.contents[0]) คือ bs4.element.NavigableString:
+        data.append(i.contents[0])
+สำหรับฉันอยู่ในช่วง (1,11):
+    สำหรับค่าใน data[1+10*c:(1+10*c)+10]:
+        ถ้าฉัน==1:
+            t1.append(ค่า)
+        เอลฟ์ ผม==2:
+            t2.append(ค่า)
+        เอลฟ์ ผม==3:
+            t3.append(ค่า)
+        เอลฟ์ ผม==4:
+            t4.append(ค่า)
+        เอลฟ์ ผม==5:
+            t5.append(ค่า)
+        เอลฟ์ ผม==6:
+            t6.append(ค่า)
+        เอลฟ์ ผม==7:
+            t7.append(ค่า)
+        เอลฟ์ ผม==8:
+            t8.append(ค่า)
+        เอลฟ์ ผม==9:
+            t9.append(ค่า)
+        เอลฟ์ ผม==10:
+            t10.append(ค่า)
+#print value.encode('utf-8')
+ค+=1
+#bs4.element.NavigableString
+title = [u"实时热点", u"热门电影", u"热门电视剧", u'热门综艺', u'热门动漫', u'热门小说', u'热门游戏', u'热门音乐' , u'热门汽车', u'热门人物']
+ตาราง = pylsytable (ชื่อเรื่อง)
+table.add_data(u'实时热点',t1)
+table.add_data(u"热门电影",t2)
+table.add_data(u"热门电视剧",t3)
+table.add_data(u"热门综艺",t4)
+table.add_data(u"热门动漫",t5)
+table.add_data(u"热门小说",t6)
+table.add_data(u"热门游戏",t7)
+table.add_data(u"热门音乐",t8)
+table.add_data(u"热门汽车",t9)
+table.add_data(u"热门人物",t10)
+table._create_table()
+พิมพ์ตาราง
